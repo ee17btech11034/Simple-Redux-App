@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+This is simple redux applicatiob to test and use redux knowledge.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
