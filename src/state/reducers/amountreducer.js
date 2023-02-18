@@ -1,4 +1,4 @@
-const moneyreducer = (state=0, action)=>{
+const amountreducer = (state=0, action)=>{
     if (action.type==='deposit'){
         return state + action.amount
     }
@@ -10,4 +10,4 @@ const moneyreducer = (state=0, action)=>{
     }
 }
 
-export default moneyreducer;
+export default amountreducer;
