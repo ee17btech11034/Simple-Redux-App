@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
+
 const Navbar = () => {
 //   const state = useSelector(state => state.amount) // me aise krke puri state ko bhi la skta hu.
   const amount = useSelector(state => state.amount)

@@ -1,15 +1,27 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import {actionCreators} from '../state/index'
+import { bindActionCreators } from 'redux'
 
 const BalanceItem = (props) => {
   const dispatch = useDispatch()
+  //without bindcreators 
+//   const downbalance = ()=>{
+//     dispatch(actionCreators.decreasebalance(parseInt(props.money)))
+//   }
+//   const upbalance = ()=>{
+//     console.log(parseInt(props.money))
+//     dispatch(actionCreators.increasebalance(parseInt(props.money)))
+//   }
+
+
+  //with bindcreators 
+  const actions = bindActionCreators(actionCreators, dispatch)
   const downbalance = ()=>{
-    dispatch(actionCreators.decreasebalance(parseInt(props.money)))
+    actions.decreasebalance(100)
   }
   const upbalance = ()=>{
-    console.log(parseInt(props.money))
-    dispatch(actionCreators.increasebalance(parseInt(props.money)))
+    actions.decreasebalance(100)
   }
   return (
     <div className='my-3 mx-3'>
